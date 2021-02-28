@@ -19,7 +19,8 @@ module DataScience
     for i in 1..input.length - 1 do
       current_letter = input[i]
 
-      # If the current letter was just seen in the previous iteration, increment its tracking counter
+      # If the current letter was just seen in the previous iteration, increment its tracking counter,
+      # but do not append anything to results because its already been appended.
       track[previous_letter]._2 += 1 if current_letter == previous_letter
 
       # Otherwise start tracking a new letter and add it to results

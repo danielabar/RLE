@@ -11,7 +11,6 @@ describe DataScience do
       a1 = Tuple.new('a', 1)
 
       expect(result).to eq([a4, b3, c2, a1])
-      expect(result.length).to eq(4)
     end
 
     it 'Handles alternating letters' do
@@ -21,7 +20,6 @@ describe DataScience do
       b1 = Tuple.new('b', 1)
 
       expect(result).to eq([a1, b1, a1, b1])
-      expect(result.length).to eq(4)
     end
   end
 end

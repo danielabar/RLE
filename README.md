@@ -10,7 +10,7 @@ Inspired by a tweet, here is some code and tests for solving a Python interview 
 [("a", 4), ("b", 3), ("c", 2), ("a", 1)]
 ```
 
-See the corresponding blog post (wip...)
+See the corresponding [blog post](https://danielabaron.me/blog/python-interview-question-in-ruby/).
 
 ## Setup
 

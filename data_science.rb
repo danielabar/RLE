@@ -4,6 +4,8 @@ Tuple = Struct.new(:_1, :_2)
 module DataScience
   # RLE (run-length encoding): Encode each character by the number of times it appears consecutively.
   def self.rle(input)
+    return [] if input.to_s.empty?
+
     # Keep track of letters that have been seen for incrementing consecutive counter.
     track = {}
 

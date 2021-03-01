@@ -21,5 +21,31 @@ describe DataScience do
 
       expect(result).to eq([a1, b1, a1, b1])
     end
+
+    it 'Handles a single character occurring once' do
+      result = DataScience.rle('z')
+
+      z1 = Tuple.new('z', 1)
+
+      expect(result).to eq([z1])
+    end
+
+    it 'Handles a single character occurring multiple times' do
+      result = DataScience.rle('zzzzz')
+
+      z1 = Tuple.new('z', 5)
+
+      expect(result).to eq([z1])
+    end
+
+    it 'Returns en empty array when given an empty string' do
+      result = DataScience.rle('')
+      expect(result).to eq([])
+    end
+
+    it 'Returns en empty array when given nil' do
+      result = DataScience.rle(nil)
+      expect(result).to eq([])
+    end
   end
 end
